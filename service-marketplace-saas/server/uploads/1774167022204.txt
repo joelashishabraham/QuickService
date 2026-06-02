@@ -1,0 +1,21 @@
+
+Booking Receipt
+----------------------------
+
+Booking ID : BK1773080769297
+
+Service    : Service
+Provider   : Provider
+
+Date       : 3/18/2026
+Time       : 9 AM - 11 AM
+
+Address
+Lat:9.632332 Lng:76.890025
+
+Payment Method : cod
+Payment Status : pending
+
+Total Paid : ₹10851
+
+Thank you for using QuickService

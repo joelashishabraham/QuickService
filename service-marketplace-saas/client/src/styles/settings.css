@@ -1,0 +1,364 @@
+/* ================= PAGE ================= */
+.settings-page{
+padding:20px;
+background:#f5f7fb;
+min-height:100vh;
+}
+
+/* ================= CARD ================= */
+.settings-card{
+background:rgba(255,255,255,0.8);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.settings-card:hover{
+transform:translateY(-3px);
+}
+
+/* ================= HEADINGS ================= */
+.settings-card h2{
+margin-bottom:10px;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+/* ================= INPUT ================= */
+.settings-card input{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border:none;
+border-radius:10px;
+outline:none;
+background:#f0f3f8;
+}
+
+/* ================= BUTTON ================= */
+.settings-card button{
+padding:10px;
+border:none;
+border-radius:10px;
+background:#007bff;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.settings-card button:hover{
+opacity:0.85;
+}
+
+/* ================= THEME TOGGLE ================= */
+.theme-toggle{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* SWITCH */
+.switch{
+position:relative;
+display:inline-block;
+width:50px;
+height:24px;
+}
+
+.switch input{
+opacity:0;
+width:0;
+height:0;
+}
+
+.slider{
+position:absolute;
+cursor:pointer;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:#ccc;
+border-radius:24px;
+transition:0.4s;
+}
+
+.slider:before{
+position:absolute;
+content:"";
+height:18px;
+width:18px;
+left:3px;
+bottom:3px;
+background:white;
+border-radius:50%;
+transition:0.4s;
+}
+
+input:checked + .slider{
+background:#007bff;
+}
+
+input:checked + .slider:before{
+transform:translateX(26px);
+}
+
+/* ================= LOGOUT ================= */
+.logout button{
+background:#dc3545;
+width:100%;
+}
+
+/* ================= DARK MODE ================= */
+body.dark{
+background:#111;
+color:white;
+}
+
+body.dark .settings-card{
+background:#1a1a1a;
+color:white;
+}
+
+body.dark input{
+background:#222;
+color:white;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+
+.settings-page{
+padding:15px;
+}
+
+}
+
+
+.settings-container{
+display:flex;
+min-height:100vh;
+background:#f5f7fb;
+}
+
+/* SIDEBAR */
+.settings-sidebar{
+width:240px;
+background:#111;
+color:white;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.settings-sidebar h2{
+margin-bottom:20px;
+}
+
+.settings-sidebar div{
+padding:12px;
+cursor:pointer;
+border-radius:10px;
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.settings-sidebar div:hover{
+background:#007bff;
+}
+
+.settings-sidebar .active{
+background:#007bff;
+}
+
+.logout{
+margin-top:auto;
+background:#dc3545;
+}
+
+/* CONTENT */
+.settings-content{
+flex:1;
+padding:30px;
+}
+
+/* CARD */
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+max-width:400px;
+}
+
+.card input{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border:none;
+border-radius:10px;
+background:#f0f3f8;
+}
+
+.card button{
+padding:10px;
+border:none;
+border-radius:10px;
+background:#007bff;
+color:white;
+cursor:pointer;
+}
+
+/* SWITCH */
+.switch{
+position:relative;
+display:inline-block;
+width:50px;
+height:24px;
+}
+
+.switch input{
+opacity:0;
+}
+
+.slider{
+position:absolute;
+cursor:pointer;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:#ccc;
+border-radius:24px;
+}
+
+.slider:before{
+position:absolute;
+content:"";
+height:18px;
+width:18px;
+left:3px;
+bottom:3px;
+background:white;
+border-radius:50%;
+transition:0.4s;
+}
+
+input:checked + .slider{
+background:#007bff;
+}
+
+input:checked + .slider:before{
+transform:translateX(26px);
+}
+
+/* DARK MODE */
+body.dark{
+background:#111;
+color:white;
+}
+
+body.dark .card{
+background:#1a1a1a;
+color:white;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.settings-container{
+flex-direction:column;
+}
+
+.settings-sidebar{
+flex-direction:row;
+overflow-x:auto;
+width:100%;
+}
+
+.settings-sidebar div{
+flex:1;
+justify-content:center;
+}
+
+}
+
+
+/* AVATAR */
+.avatar-box{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:10px;
+}
+
+.avatar-box img{
+width:70px;
+height:70px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #007bff;
+}
+
+/* DANGER */
+.card.danger{
+border:2px solid red;
+}
+
+.card.danger button{
+background:red;
+color:white;
+}
+
+/* PAYMENT INPUT */
+.card input{
+font-size:14px;
+}
+
+/* FILE INPUT */
+.avatar-box input{
+border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.avatar img{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #eee;
+}
+
+.upload-btn{
+margin-top:10px;
+background:#111;
+color:#fff;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+font-size:12px;
+}
